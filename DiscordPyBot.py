@@ -1,4 +1,4 @@
-
+// waiting help
 import discord
 import asyncio
 
