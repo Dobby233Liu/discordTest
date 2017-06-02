@@ -3,7 +3,7 @@ process.stdout.write('Logging in..')
 try{
 var Discordie = require('discordie');
 }catch(err){
-	console.log('You are missing the Discordie module\nInstalling Discordie now...')
+	console.log('You are not Installed the Discordie module! \nI'm help you Installing Discordie...')
 	   const exec = require('child_process').exec;
 	exec('npm install --save discordie', function(err, stdin, stdout){})
 }
@@ -12,13 +12,13 @@ var Discordie = require('discordie');
 const Token = "Your bot token"
 const Events = Discordie.Events;
 const client = new Discordie();
-const prefix = "octo."
+const prefix = "october."
 
 client.Dispatcher.on('GATEWAY_READY', () => {
 	client.User.setStatus('online', {
 		type: 1,
-		name: "🎉 Type "+prefix+"help for commands!",
-		url: "https://twitch.tv/"+client.User.username
+		name: "🎉 Type "+prefix+"help for commands!\nand, i very thanks TemTemmie`s orignal commands! ",
+		url: "https:/github.com/TemTemmie/OctoBot/"
 	})
 	process.stdout.write('\033c');
 	console.log('API State => Connected')
